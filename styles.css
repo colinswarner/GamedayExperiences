@@ -1,0 +1,106 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .white
+{
+    color: #ffffff;
+}
+nav .navbar-brand .black
+{
+    color: #000;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+.btn-primary
+{
+    background-color: #5a2e80;
+    border-color: #5a2e80;
+}
+
+.symbolselect
+{
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s
+}
+
+#gamebox
+{
+    border: 2px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s;
+    border-collapse: collapse;
+}
+
+.indextable th
+{
+    text-align: center;
+    font-size: large;
+}
+
+.indextable
+{
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    text-align: center;
+    border-spacing: 2px;
+    border-color: grey;
+    border-collapse: collapse;
+    border-bottom: solid;
+    border-top: solid;
+}
+
+.indextable tr
+{
+    font-size: small;
+    padding-top: 40px;
+}
+
+#indexdata
+{
+    font-size: small;
+    border-top: 1px solid #ced4da;
+}

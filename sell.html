@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="POST">
+        <div class="form-group">
+            <select name="name_long" class = "symbolselect">
+                {% for item in inventory %}
+                <option><b>{{ item["event"] }}_{{ item["game_date"] }}_{{ item["name"] }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="quantity" placeholder="Quantity" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Return</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+{% block main %}
+    <H1 style="vertical-align: bottom; padding-top: 10px; color: #5a2e80">Welcome, {{ users[0]["first_name"]  }}!</H1>
+    <br>
+    <H3 style = "background-color: rgba(0,0,0,.15); color: white;">Credit Balance: <span style = "color: #5a2e80">${{ users[0]["cash"] }}</span></H3>
+    </br>
+    <H3 style = "text-align: left">Your Upcoming Experiences:</H5>
+    <table class = "indextable">
+        <tr>
+            <th>Name</th>
+            <th>Game</th>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Game Date</th>
+        </tr>
+    {% for row in rows %}
+        <tr class = "top_bottom_border" id = "indexdata">
+            <td>{{ row["name"] }}</td>
+            <td>{{ row["event"] }}</td>
+            <td>{{ row["quantity"] }}</td>
+            <td style = "width: 40%">{{ row["description"] }}</td>
+            <td>{{ row["game_date"] }}</td>
+        </tr>
+    {% endfor %}
+        <tr class = "top_bottom_border">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+{% endblock %}
